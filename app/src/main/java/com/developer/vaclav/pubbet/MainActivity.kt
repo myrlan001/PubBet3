@@ -22,6 +22,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         changeMyCoins()
+
+        val dialog = TutorialDialog(this)
+        dialog.setText("Welcome you stupid people!")
+        dialog.setDarkTheme()
+        dialog.onClick(View.OnClickListener {
+            dialog.dismiss()
+        })
+
     }
 
     fun op1Tap(view: View) {
