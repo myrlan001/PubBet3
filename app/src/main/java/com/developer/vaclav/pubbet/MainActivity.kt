@@ -20,6 +20,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun op1Tap(view: View) {
-        op1Img.setImageResource(R.drawable.coin01)
+        op1 = if (op1 == '0') {
+            op1Img.setImageResource(R.drawable.coin01)
+            '1'
+        } else {
+            op1Img.setImageResource(R.drawable.coin01)
+            '0'
+        }
+
     }
 }
