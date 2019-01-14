@@ -18,19 +18,19 @@
     >
 
         <ImageView
-                android:id="@+id/op1"
+                android:id="@+id/op1Img"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/coin01"
         />
         <ImageView
-                android:id="@+id/op2"
+                android:id="@+id/op2Img"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/coin01"
         />
         <ImageView
-                android:id="@+id/op3"
+                android:id="@+id/op3Img"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/coin01"
