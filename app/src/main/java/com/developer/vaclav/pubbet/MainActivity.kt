@@ -13,6 +13,6 @@ class MainActivity : AppCompatActivity() {
         val counters = listOf("100", "100", "001", "001", "110", "110", "011", "011")
     }
 
-    //todo note from Jenda
+    //todo note from Jenda lol
 
 }
