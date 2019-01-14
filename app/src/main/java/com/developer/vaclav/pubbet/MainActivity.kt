@@ -7,6 +7,9 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    //Head = 0 = False
+    //Tail = 1 = True
+
     var op1 = '0'
     var op2 = '0'
     var op3 = '0'
