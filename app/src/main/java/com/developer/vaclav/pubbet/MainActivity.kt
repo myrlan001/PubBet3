@@ -47,7 +47,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun changeMyCoins() {
-
-
+        val counter = counters[possibilities.indexOf(op1.toString() + op2.toString() + op3.toString())]
+        if (counter[0] == '0') {my1Img.setImageResource(R.drawable.coin_0)} else {my1Img.setImageResource(R.drawable.coin_1)}
+        if (counter[1] == '0') {my2Img.setImageResource(R.drawable.coin_0)} else {my2Img.setImageResource(R.drawable.coin_1)}
+        if (counter[2] == '0') {my3Img.setImageResource(R.drawable.coin_0)} else {my3Img.setImageResource(R.drawable.coin_1)}
     }
 }
