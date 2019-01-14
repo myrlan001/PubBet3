@@ -1,6 +1,5 @@
 package com.developer.vaclav.pubbet
 
-import android.graphics.drawable.BitmapDrawable
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View

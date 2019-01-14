@@ -7,12 +7,28 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
+    <TextView
+            android:id="@+id/textViewOp"
+            android:text="Opponent's combination"
+            android:textColor="@android:color/black"
+            android:layout_margin="40dp"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+    />
+
     <LinearLayout
+            android:id="@+id/llOp"
             android:gravity="center_horizontal"
             android:orientation="horizontal"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewOp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
     >
@@ -23,20 +39,78 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/coin01"
+                android:layout_margin="10dp"
         />
         <ImageView
                 android:id="@+id/op2Img"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/coin01"
+                android:layout_margin="10dp"
         />
         <ImageView
                 android:id="@+id/op3Img"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/coin01"
+                android:layout_margin="10dp"
         />
 
     </LinearLayout>
+
+
+
+
+
+    <TextView
+            android:id="@+id/textViewMy"
+            android:text="Best combination against"
+            android:textColor="@android:color/black"
+            android:layout_margin="40dp"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/llOp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+    />
+
+    <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/textViewMy"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+    >
+
+        <ImageView
+                android:id="@+id/my1Img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/coin01"
+                android:layout_margin="10dp"
+        />
+        <ImageView
+                android:id="@+id/my2Img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/coin01"
+                android:layout_margin="10dp"
+        />
+        <ImageView
+                android:id="@+id/my3Img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/coin01"
+                android:layout_margin="10dp"
+        />
+
+    </LinearLayout>
+
+
 
 </android.support.constraint.ConstraintLayout>
