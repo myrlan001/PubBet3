@@ -38,21 +38,23 @@
                 android:onClick="op1Tap"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/coin01"
+                android:src="@drawable/coin_0"
                 android:layout_margin="10dp"
         />
         <ImageView
                 android:id="@+id/op2Img"
+                android:onClick="op2Tap"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/coin01"
+                android:src="@drawable/coin_0"
                 android:layout_margin="10dp"
         />
         <ImageView
                 android:id="@+id/op3Img"
+                android:onClick="on3Tap"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/coin01"
+                android:src="@drawable/coin_0"
                 android:layout_margin="10dp"
         />
 

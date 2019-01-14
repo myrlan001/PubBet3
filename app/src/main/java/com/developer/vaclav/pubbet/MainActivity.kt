@@ -3,6 +3,7 @@ package com.developer.vaclav.pubbet
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -23,14 +24,26 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun op1Tap(view: View) {
-        op1 = if (op1 == '0') {
-            op1Img.setImageResource(R.drawable.coin01)
+        op1 = op1.changeCoin(op1Img)
+        changeMyCoins()
+    }
+    fun op2Tap(view: View) {
+        op2 = op2.changeCoin(op2Img)
+        changeMyCoins()
+    }
+    fun on3Tap(view: View) {
+        op3 = op3.changeCoin(op3Img)
+        changeMyCoins()
+    }
+
+    private fun Char.changeCoin(img: ImageView): Char {
+        return if (this == '0') {
+            img.setImageResource(R.drawable.coin_1)
             '1'
         } else {
-            op1Img.setImageResource(R.drawable.coin01)
+            img.setImageResource(R.drawable.coin_0)
             '0'
         }
-
     }
 
     fun changeMyCoins() {
