@@ -1,7 +1,9 @@
 package com.developer.vaclav.pubbet
 
+import android.graphics.drawable.BitmapDrawable
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,4 +20,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     //todo note from  ̶J̶e̶n̶d̶a̶ Václav
+
+    fun op1Tap(view: View) {
+        val bitmapDrawable = BitmapDrawable("android:resources://com.developer.vaclav.pubbet/" + R.drawable.coin01)
+        view.setBackgroundDrawable(bitmapDrawable)
+    }
 }
