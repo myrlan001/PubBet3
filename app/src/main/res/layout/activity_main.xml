@@ -19,6 +19,7 @@
 
         <ImageView
                 android:id="@+id/op1Img"
+                android:onClick="op1Tap"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/coin01"

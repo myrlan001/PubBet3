@@ -4,6 +4,7 @@ import android.graphics.drawable.BitmapDrawable
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,10 +20,10 @@ class MainActivity : AppCompatActivity() {
         val counters =      listOf("100", "100", "001", "001", "010", "110", "011", "011")
     }
 
-    //todo note from  ̶J̶e̶n̶d̶a̶ Václav
-
     fun op1Tap(view: View) {
-        val bitmapDrawable = BitmapDrawable("android:resources://com.developer.vaclav.pubbet/" + R.drawable.coin01)
-        view.setBackgroundDrawable(bitmapDrawable)
+        op1Img.setImageResource(R.drawable.coin01)
+
+        //val bitmapDrawable = BitmapDrawable("android:resources://com.developer.vaclav.pubbet/" + R.drawable.coin01)
+        //view.setBackgroundDrawable(bitmapDrawable)
     }
 }
