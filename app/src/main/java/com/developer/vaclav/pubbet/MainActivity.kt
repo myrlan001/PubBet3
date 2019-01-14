@@ -23,13 +23,24 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         changeMyCoins()
 
+    }
+
+    fun helpDialog (view: View) {
         val dialog = TutorialDialog(this)
-        dialog.setText("Welcome you stupid people!")
+        dialog.setText("Imagine, that you want to make a bet. You bet that you throw with a coin 3 times. Whose combination falls first, wins. Perfectly random, right? But it's actually not. Every combination has it's counter-combination, which is more probable. This app will allow you to quickly find your best counter-combination!")
         dialog.setDarkTheme()
         dialog.onClick(View.OnClickListener {
             dialog.dismiss()
         })
+    }
 
+    fun authorsDialog (view: View) {
+        val dialog = TutorialDialog(this)
+        dialog.setText("Václav Sysel: Programmer, Jan Homola: Programmer and main Designer. All icons belongs to: Flaticon: Smashicons. Pictures of coins belongs to Amazon.com. Creative Commons BY 3,0. 2019")
+        dialog.setDarkTheme()
+        dialog.onClick(View.OnClickListener {
+            dialog.dismiss()
+        })
     }
 
     fun op1Tap(view: View) {

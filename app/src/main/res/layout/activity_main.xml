@@ -8,6 +8,21 @@
         tools:context=".MainActivity">
 
     <TextView
+            android:text="About authors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/authorsTextView" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:onClick="authorsDialog"/>
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@android:drawable/ic_dialog_info"
+            android:id="@+id/buttonHelp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            android:onClick="helpDialog"/>
+    <TextView
             android:id="@+id/textViewOp"
             android:text="Opponent's combination"
             android:textColor="@android:color/black"
