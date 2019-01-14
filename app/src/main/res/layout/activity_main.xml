@@ -93,21 +93,21 @@
                 android:id="@+id/my1Img"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/coin01"
+                android:src="@drawable/coin_0"
                 android:layout_margin="10dp"
         />
         <ImageView
                 android:id="@+id/my2Img"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/coin01"
+                android:src="@drawable/coin_0"
                 android:layout_margin="10dp"
         />
         <ImageView
                 android:id="@+id/my3Img"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/coin01"
+                android:src="@drawable/coin_0"
                 android:layout_margin="10dp"
         />
 

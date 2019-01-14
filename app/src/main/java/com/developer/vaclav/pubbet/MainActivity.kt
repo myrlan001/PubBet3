@@ -11,16 +11,17 @@ class MainActivity : AppCompatActivity() {
     //Head = 0 = False
     //Tail = 1 = True
 
-    var op1 = '0'
-    var op2 = '0'
-    var op3 = '0'
+    private var op1 = '0'
+    private var op2 = '0'
+    private var op3 = '0'
 
-    val possibilities = listOf("000", "001", "010", "011", "100", "101", "110", "111")
-    val counters =      listOf("100", "100", "001", "001", "010", "110", "011", "011")
+    private val possibilities = listOf("000", "001", "010", "011", "100", "101", "110", "111")
+    private val counters =      listOf("100", "100", "001", "001", "010", "110", "011", "011")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        changeMyCoins()
     }
 
     fun op1Tap(view: View) {
@@ -46,10 +47,10 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun changeMyCoins() {
+    private fun changeMyCoins() {
         val counter = counters[possibilities.indexOf(op1.toString() + op2.toString() + op3.toString())]
-        if (counter[0] == '0') {my1Img.setImageResource(R.drawable.coin_0)} else {my1Img.setImageResource(R.drawable.coin_1)}
-        if (counter[1] == '0') {my2Img.setImageResource(R.drawable.coin_0)} else {my2Img.setImageResource(R.drawable.coin_1)}
-        if (counter[2] == '0') {my3Img.setImageResource(R.drawable.coin_0)} else {my3Img.setImageResource(R.drawable.coin_1)}
+        if (counter[0] == '0') my1Img.setImageResource(R.drawable.coin_0) else my1Img.setImageResource(R.drawable.coin_1)
+        if (counter[1] == '0') my2Img.setImageResource(R.drawable.coin_0) else my2Img.setImageResource(R.drawable.coin_1)
+        if (counter[2] == '0') my3Img.setImageResource(R.drawable.coin_0) else my3Img.setImageResource(R.drawable.coin_1)
     }
 }
