@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val possibilities = listOf("000", "001", "010", "011", "100", "101", "110", "111")
-        val counters = listOf("100", "100", "001", "001", "110", "110", "011", "011")
+        val counters = listOf("100", "100", "001", "001", "010", "110", "011", "011")
     }
 
     //todo note from Jenda lol
