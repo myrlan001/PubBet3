@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
     private var op3 = '0'
 
     private val possibilities = listOf("000", "001", "010", "011", "100", "101", "110", "111")
-    private val counters =      listOf("100", "100", "001", "001", "010", "110", "011", "011")
+    private val counters =      listOf("100", "100", "001", "001", "110", "110", "011", "011")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
