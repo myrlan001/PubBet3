@@ -28,8 +28,8 @@ class TutorialDialog(context: Context): Dialog(context) {
     private fun Int.toPx() = this * density.toInt()
 
     init {
-        textView.textSize = 20f
-        textView.gravity = Gravity.CENTER_VERTICAL
+        textView.textSize = 23f
+        textView.gravity = Gravity.CENTER_HORIZONTAL
         textView.setTextColor(Color.rgb(33,33,33))
         textView.setPadding(50.toPx(), 100.toPx(), 50.toPx(), 100.toPx())
 
